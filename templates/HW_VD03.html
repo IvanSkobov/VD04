@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanPro - профессиональный клининг</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .carousel-img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .service-card {
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="bg-primary text-white py-3 sticky-top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="mb-0 fs-3 fw-bold"><i class="bi bi-bucket-fill"></i> CleanPro</h1>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#services">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#faq">Вопросы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <!-- Секция 1: Слайдер -->
+        <section class="mb-5">
+            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner rounded-3 overflow-hidden shadow">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100 carousel-img" alt="Профессиональная уборка">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3">
+                            <h2>Профессиональный клининг</h2>
+                            <p>Идеальная чистота для вашего дома и офиса</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100 carousel-img" alt="Химчистка мебели">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3">
+                            <h2>Химчистка мебели и ковров</h2>
+                            <p>Вернем свежесть вашим вещам</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="d-block w-100 carousel-img" alt="Уборка после ремонта">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3">
+                            <h2>Уборка после ремонта</h2>
+                            <p>Избавим от строительной пыли и мусора</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Секция 2: Карточки услуг -->
+        <section id="services" class="mb-5">
+            <h2 class="text-center mb-4">Наши услуги</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 service-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Генеральная уборка">
+                        <div class="card-body">
+                            <h5 class="card-title">Генеральная уборка</h5>
+                            <p class="card-text">Комплексная очистка всех поверхностей, включая труднодоступные места. Мытье окон, чистка сантехники, дезинфекция поверхностей.</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Квартиры от 2500 руб.</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Офисы от 3500 руб.</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Коттеджи от 5000 руб.</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary w-100">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 service-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Химчистка мебели">
+                        <div class="card-body">
+                            <h5 class="card-title">Химчистка мебели</h5>
+                            <p class="card-text">Профессиональная чистка диванов, кресел, матрасов и другой мягкой мебели с использованием экологичных чистящих средств.</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Диван от 1500 руб.</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Кресло от 800 руб.</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Матрас от 1200 руб.</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary w-100">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 service-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Уборка после ремонта">
+                        <div class="card-body">
+                            <h5 class="card-title">Уборка после ремонта</h5>
+                            <p class="card-text">Полное удаление строительной пыли, пятен краски, клея и других следов ремонта. Вывоз мусора включен в стоимость.</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> 1-комнатная от 4000 руб.</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> 2-комнатная от 5500 руб.</li>
+                                <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> 3-комнатная от 7000 руб.</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary w-100">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 3: О компании -->
+        <section id="about" class="mb-5 bg-light p-4 rounded-3">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>О компании CleanPro</h2>
+                    <p>Мы работаем на рынке клининговых услуг с 2010 года и за это время заслужили репутацию надежного партнера. Наши клиенты - это более 500 частных лиц и 100 компаний, которые доверяют нам поддержание чистоты в своих помещениях.</p>
+                    <p>Используем только профессиональное оборудование и экологически безопасные моющие средства. Все наши сотрудники проходят строгий отбор и обучение по стандартам ISO.</p>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-check-circle-fill text-success fs-4 me-2"></i>
+                        <span>Гарантия качества услуг</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-check-circle-fill text-success fs-4 me-2"></i>
+                        <span>Страхование ответственности</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-check-circle-fill text-success fs-4 me-2"></i>
+                        <span>Конфиденциальность данных</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-3 shadow" alt="Наша команда">
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 4: Аккордеон с вопросами -->
+        <section id="faq" class="mb-5">
+            <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
+            <div class="accordion shadow-sm" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Какие средства вы используете для уборки?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Мы используем профессиональные моющие средства ведущих мировых производителей (Karcher, Procter & Gamble, Ecolab), которые эффективно удаляют загрязнения и при этом безопасны для людей и домашних животных. Все средства имеют сертификаты соответствия и экологические паспорта.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Нужно ли мне присутствовать во время уборки?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Это не обязательно. Вы можете оставить нам ключи (под расписку) или доверить доступ другим способом. Все наши сотрудники проходят проверку и несут материальную ответственность. Также мы предлагаем услугу "Уборка под ключ" с фотоотчетом на каждом этапе.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Как быстро можно заказать уборку?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Мы предлагаем как плановые, так и срочные уборки. В стандартном режиме можно заказать уборку на любой день в течение недели. Срочную уборку (в течение 3-4 часов после заявки) можно заказать с доплатой 20% к стоимости услуги.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            Даете ли вы гарантию на уборку?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, мы предоставляем гарантию 24 часа на все виды уборок. Если в течение этого времени вы обнаружите недостатки в нашей работе, мы бесплатно устраним их без дополнительной оплаты.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 5: Форма заявки -->
+        <section class="bg-primary text-white p-5 rounded-3 mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Оставьте заявку прямо сейчас!</h2>
+                    <p>Мы перезвоним вам в течение 15 минут для уточнения деталей и расчета точной стоимости уборки.</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-telephone-fill fs-3 me-3"></i>
+                        <div>
+                            <div class="fw-bold">Телефон для связи</div>
+                            <div class="fs-4">8 (800) 123-45-67</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Телефон" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option selected disabled>Выберите услугу</option>
+                                <option>Генеральная уборка</option>
+                                <option>Химчистка мебели</option>
+                                <option>Уборка после ремонта</option>
+                                <option>Регулярная уборка</option>
+                                <option>Мойка окон</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-light w-100">Заказать уборку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer id="contacts" class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3><i class="bi bi-bucket-fill"></i> CleanPro</h3>
+                    <p>Профессиональные клининговые услуги для дома и офиса. Работаем круглосуточно, 7 дней в неделю.</p>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        <span>Безопасные средства</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        <span>Опытные сотрудники</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                        <span>Гарантия качества</span>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3>Контактная информация</h3>
+                    <p><i class="bi bi-geo-alt-fill text-primary me-2"></i> г. Москва, ул. Чистая, д. 15, оф. 42</p>
+                    <p><i class="bi bi-telephone-fill text-primary me-2"></i> 8 (800) 123-45-67</p>
+                    <p><i class="bi bi-envelope-fill text-primary me-2"></i> info@cleanpro.ru</p>
+                    <p><i class="bi bi-clock-fill text-primary me-2"></i> Работаем: круглосуточно</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links mb-3">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-3"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-3"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-vimeo fs-3"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-3"></i></a>
+                    </div>
+                    <h3>Способы оплаты</h3>
+                    <div>
+                        <i class="bi bi-credit-card-2-front-fill fs-3 me-2"></i>
+                        <i class="bi bi-paypal fs-3 me-2"></i>
+                        <i class="bi bi-cash-coin fs-3"></i>
+                    </div>
+                    <p class="mt-3 small">&copy; 2025 CleanPro. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
